@@ -53,7 +53,7 @@ hold_btn.addEventListener("click", () => {
   scoreValue[activePlayerCheck] += currentScore;
   document.getElementById(`score_${activePlayerCheck}`).textContent =
     scoreValue[activePlayerCheck];
-  if (scoreValue[activePlayerCheck] >= 30) {
+  if (scoreValue[activePlayerCheck] >= 50) {
     console.log(
       alert(`Player ${activePlayerCheck + 1} is a winner!!! Play a new game.`)
     );
