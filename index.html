@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="pigGame bg-gradient bg-warning">
+      <div class="container vh-100 position-relative">
+        <div class="row">
+          <div class="col-lg-6 player player1 activePlayer" id="player_0">
+            <div
+              class="vh-100 text-center p-5 d-flex align-items-center justify-content-around flex-column"
+            >
+              <div>
+                <h1 class="name" id="name_0">Player 1</h1>
+                <p class="score display-1" id="score_0">22</p>
+              </div>
+
+              <div class="current bg-warning p-2 w-50 rounded-3">
+                <h4 class="currentLabel" id="label_0">Current</h4>
+                <p class="currentValue display-6 p-0" id="value_0">17</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 player player2" id="player_1">
+            <div
+              class="vh-100 text-center p-5 d-flex align-items-center justify-content-around flex-column"
+            >
+              <div>
+                <h1 class="name" id="name_1">Player 2</h1>
+                <p class="score display-1" id="score_1">10</p>
+              </div>
+
+              <div class="current bg-warning p-2 w-50 rounded-3">
+                <h4 class="currentLabel" id="label_1">Current</h4>
+                <p class="currentValue display-6 p-0" id="value_1">31</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Dice Img start -->
+      <img
+        src="/imgs/4.png"
+        class="img-fluid diceImg position-absolute top-50 start-50 translate-middle"
+        alt="Playing dice"
+      />
+      <!-- Dice Img end -->
+
+      <!-- Game Buttons start-->
+      <div
+        class="gameButtons vh-100 d-flex p-5 justify-content-between align-items-center flex-column position-absolute top-0 start-50 translate-middle-x"
+      >
+        <button class="btn btn-light px-4 newgame_btn opacity-75 rounded-pill">
+          🚩New Game
+        </button>
+        <div>
+          <button class="btn btn-light px-4 roll_btn opacity-75 rounded-pill">
+            🎲 Roll dice
+          </button>
+          <button
+            class="btn mx-auto d-block mt-4 hold_btn btn-light px-4 opacity-75 rounded-pill"
+          >
+            🕹 Hold
+          </button>
+        </div>
+      </div>
+      <!-- Game Buttons end -->
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
